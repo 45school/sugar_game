@@ -105,7 +105,7 @@
             <div class="hud-coins-pill" id="hub-coins-pill" title="Игровые монеты (нажми, чтобы открыть Лавку)" style="cursor: pointer;">
               <span>🪙</span>
               <span id="hub-coins-val" class="hud-coins-value">100</span>
-              <span style="font-size: 11px; color: var(--color-gold); margin-left: 4px;">+🛒</span>
+              <span class="hud-coins-add-hint" style="font-size: 11px; color: var(--color-gold); margin-left: 4px;">+🛒</span>
             </div>
             <button id="hub-btn-shop" class="btn" title="Детективная Лавка" style="border-color: var(--color-gold);">
               <span>🛍️ Лавка</span>
@@ -204,7 +204,7 @@
             <div class="hud-coins-pill" id="catalog-coins-pill" title="Открыть Лавку" style="cursor: pointer;">
               <span>🪙</span>
               <span id="catalog-coins-val" class="hud-coins-value">100</span>
-              <span style="font-size: 11px; color: var(--color-gold);">+🛒</span>
+              <span class="hud-coins-add-hint" style="font-size: 11px; color: var(--color-gold);">+🛒</span>
             </div>
             <button id="catalog-btn-sound" class="btn btn-icon" title="Звук">
               <span class="icon-slot">🔊</span>
@@ -286,7 +286,7 @@
             <div id="hud-coins-pill" class="hud-coins-pill" title="Открыть Лавку во время игры" style="cursor: pointer;">
               <span>🪙</span>
               <span id="hud-coins-val" class="hud-coins-value">100</span>
-              <span style="font-size: 11px; color: var(--color-gold);">+🛒</span>
+              <span class="hud-coins-add-hint" style="font-size: 11px; color: var(--color-gold);">+🛒</span>
             </div>
 
             <!-- Pause Button -->
@@ -304,7 +304,7 @@
               <span style="font-size: 24px;">😈</span>
               <div>
                 <div class="boss-name">БОСС: Синтетический Сахарный Титан</div>
-                <div style="font-size: 11px; color: #E9D5FF;">Наноси критический урон химическими ответами!</div>
+                <div class="boss-subtitle" style="font-size: 11px; color: #E9D5FF;">Наноси критический урон химическими ответами!</div>
               </div>
             </div>
             <div class="boss-hp-slots" id="boss-hp-container">
@@ -365,8 +365,8 @@
               <div id="drawer-explanation" class="feedback-explanation">Подробное пояснение к составу...</div>
             </div>
           </div>
-          <div>
-            <button id="drawer-btn-next" class="btn btn-primary btn-lg">
+          <div style="width: 100%; display: flex; justify-content: flex-end;">
+            <button id="drawer-btn-next" class="btn btn-primary btn-lg drawer-btn-next">
               <span>Далее</span>
               <span>→</span>
             </button>
@@ -461,7 +461,7 @@
               <button class="shop-tab-btn active" data-tab="boosters">⚡ Бустеры</button>
               <button class="shop-tab-btn" data-tab="avatars">🕵️ Аватары</button>
               <button class="shop-tab-btn" data-tab="themes">🎨 Темы UI</button>
-              <button class="shop-tab-btn" data-tab="dossiers">📜 Секретные Досье</button>
+              <button class="shop-tab-btn" data-tab="dossiers">📜 Досье</button>
             </div>
 
             <!-- Shop Items Grid -->
